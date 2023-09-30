@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(570deg, #8b9043,#b62828,#161576f2,#6e2284);
+    padding: 10px;
+
+}
+.todo-app{
+    width: 100%;
+    max-width: 500px;
+    background: #000000c9;
+    margin: 100px auto 20px;
+    border-radius: 10px;
+    padding: 40px 30px 70px;
+    box-shadow: 18px 20px 0 9px rgb(2 8 0 / 30%);
+}
+.todo-app h1 {
+    /* font-family: 'Rubik Puddles', cursive; */
+    /* font-family: 'Cherry Bomb One', cursive; */
+    /* font-family: 'Tilt Prism', cursive; */
+    /* font-family: 'Foldit', cursive; */
+    font-family: 'Bruno Ace SC', cursive;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fb690f;
+    text-align: center;
+    margin-bottom: -7px;
+}
+.todo-app img{
+    width: 65px;
+    margin: -36px 71px 76px -263px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background: #f0d5fc;
+    padding-left: 20px;
+    border-radius: 22px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 6px;
+    font-weight: 15px;
+}
+button{
+    border: none;
+    outline: none;
+    background: #8927de;
+    cursor:pointer;
+    padding: 17px 15px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 19px;
+    
+}
+ul li{
+    font-size: 20px;
+    padding: 20px 18px 12px 17px;
+    cursor: pointer;
+    color: #f0d5fc;
+    position: relative;
+}
+ul li::before{
+    content: ' ';
+    position: absolute;
+    width: 27px;
+    height: 26px;
+    border-radius: 117%;
+    /* transform: translateY(-50%); */
+    background-image: url(unchecked.png);
+    background-size: cover;
+    margin: 0px -45px;
+    background-position: center;
+
+}
+ul li.checked{
+    color: #fe0000;
+    text-decoration:line-through;
+}
+ul li.checked::before{
+    background-image: url(checked.png);
+    background-size: cover;
+    background-position: center;
+}
+footer{
+    background: linear-gradient(358deg, #8b9043,#b62828,#161576f2,#6e2284);
+    color: #d6d5d7;
+}
